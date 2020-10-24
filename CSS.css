@@ -1,0 +1,126 @@
+body {
+  color: #545454;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  font: normal 16px comic sans ms;
+  text-align: center;
+}
+
+.title span {
+  color: #FF6961;
+}
+
+#tic-tac-toe {
+  cell-spacing: 0px;
+  border-spacing: 0px;
+  border-radius: 25px;
+  border-collapse: separate;
+  margin: 30px auto;
+  background: #FFDFD3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+}
+
+#tic-tac-toe td {
+  border: 2px solid #836;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font: bold 60px comic sans ms;
+  margin-top: 50px;
+  align-items: center;
+}
+
+#tic-tac-toe tr:first-child td {
+  border-top: none
+}
+
+#tic-tac-toe tr:last-child td {
+  border-bottom: none
+}
+
+#tic-tac-toe tr td:first-child {
+  border-left: none;
+}
+
+#tic-tac-toe tr td:last-child {
+  border-right: none;
+}
+
+#tic-tac-toe td.X {
+  color: #ED676B; 
+}
+
+#tic-tac-toe td.O {
+  color: #23916B;
+}
+
+#scoreboard .score {
+  text-align: center;
+  font-size: 30px
+}
+
+#scoreboard .score#player1 {
+  color: #ED676B;
+}
+
+#scoreboard .score#player2 {
+  color: #23916B;
+}
+.button {
+  position: relative;
+  background-color: #FF6961;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background:  #f1a19d;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.select {
+  position: relative;
+  background-color: #FF6961;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
